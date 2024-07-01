@@ -8,7 +8,7 @@ import { PrismaClient } from "@prisma/client";
 dotenv.config();
 const prisma = new PrismaClient();
 const app = express();
-const allowedOrigins = ["http://localhost:3000"];
+const allowedOrigins = ["http://localhost:3000", "https://www.btckeys.io/"];
 const corsOptions = {
     origin: function (origin: any, callback: any) {
       if (!origin || allowedOrigins.indexOf(origin) !== -1) {
